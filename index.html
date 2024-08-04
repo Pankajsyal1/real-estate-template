@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.png" type="image/icon">
+    <title>UniLand</title>
+    <meta name="description" content="A reacl estate landing page.">
+    <script src="icons/all.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="bg-dark py-3">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row gap-2 justify-content-sm-between align-items-center">
+                    <div class="d-inline-flex gap-2 text-white align-items-center social-links">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Support ? </span>
+                        <a class="text-primary" href="tel:+14357824312">+1-435-782-4312</a>
+                    </div>
+                    <div class="d-inline-flex gap-3 align-items-center social-links">
+                        <a href="" target="_blank" aria-label="link to email"><i class="fas fa-envelope fs-5"></i></a>
+                        <a href="" target="_blank" aria-label="link to facebook"><i
+                                class="fab fa-facebook fs-5"></i></a>
+                        <a href="" target="_blank" aria-label="link to twitter"><i class="fab fa-twitter fs-5"></i></a>
+                        <a href="" target="_blank" aria-label="link to instagram"><i
+                                class="fab fa-instagram fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--nav-bar-->
+        <div class="sticky-top bg-white z-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl navbar-light">
+                    <a class="navbar-brand col-md-3" href="/">
+                        <img src="Images/logo.png" width="160" alt="logo">
+                    </a>
+                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse pb-3 pb-xl-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-xl-0 mt-3 mt-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownListing" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Listing
+                                </a>
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdownListing">
+                                    <li><a class="dropdown-item" href="#">Property Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Property List</a></li>
+                                    <li><a class="dropdown-item" href="#">Listing Variation</a></li>
+                                    <li><a class="dropdown-item" href="#">Property With Map</a></li>
+                                    <li><a class="dropdown-item" href="#">Advanced Search</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFeatures" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Features
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownFeatures">
+                                    <li><a class="dropdown-item" href="#">Single Property</a></li>
+                                    <li><a class="dropdown-item" href="#">Left Filter Search</a></li>
+                                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="#">Content Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Agent</a></li>
+                                    <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Compare</a></li>
+                                    <li><a class="dropdown-item" href="#">Sumbit Property</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testomonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <a href="" class="btn btn-primary ms-xl-4">+ Create Listing</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!--hero Slider-->
+        <section class="hero-slider mb-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active position-relative">
+                        <img src="Images/s-1.png" class="d-block object-fit-cover w-100" height="600" alt="s-1">
+                        <div
+                            class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
+                            <h1 class="text-primary fw-bold">WE CONSTRUCT YOUR HOUSE</h1>
+                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
+                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
+                                Nec vel ac penatibus hendrerit sociis purus, nec
+                                rhoncus ac vel.</p>
+                            <button class="btn btn-outline-primary fw-semibold">CONTACT US</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/s-2.png" class="d-block object-fit-cover w-100" height="600" alt="s-3">
+                        <div
+                            class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
+                            <h1 class="text-primary fw-bold">FIND YOUR DREAM HOUSE</h1>
+                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
+                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
+                                Nec vel ac penatibus hendrerit sociis purus, nec
+                                rhoncus ac vel.</p>
+                            <button class="btn btn-outline-primary fw-semibold">SEARCH PROPERTY</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/s-3.png" class="d-block object-fit-cover w-100" height="600" alt="s-3">
+                        <div
+                            class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
+                            <h1 class="text-primary fw-bold">FIND YOUR DREAM HOUSE</h1>
+                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
+                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
+                                Nec vel ac penatibus hendrerit sociis purus, nec
+                                rhoncus ac vel.</p>
+                            <button class="btn btn-outline-primary fw-semibold">SEARCH PROPERTY</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/s-4.png" class="d-block object-fit-cover w-100" height="600" alt="s-3">
+                        <div
+                            class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
+                            <h1 class="text-primary fw-bold">FIND YOUR DREAM HOUSE</h1>
+                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
+                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
+                                Nec vel ac penatibus hendrerit sociis purus, nec
+                                rhoncus ac vel.</p>
+                            <button class="btn btn-outline-primary fw-semibold">SEARCH PROPERTY</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none d-md-inline" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none d-md-inline" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--search property-->
+        <section class="search-property py-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="fs-2 fw-bold text-decoration-underline visually-hidden">Search Property</h2>
+                </div>
+                <div class="row p-3 p-md-4 p-xl-5 g-3 shadow-sm border rounded-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <input type="text" class="form-control shadow-none" placeholder="Type Keyward..">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <select id="inputStateProperty" aria-label="property type" class="form-select shadow-none">
+                            <option selected>Property Type</option>
+                            <option>House</option>
+                            <option>Office</option>
+                            <option>Appartment</option>
+                            <option>Small Family</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <select id="inputStateLocation" aria-label="location" class="form-select shadow-none">
+                            <option selected>Location...</option>
+                            <option>Chandigarh</option>
+                            <option>Mohali</option>
+                            <option>Zirakpur</option>
+                            <option>Manimajra</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <button class="btn btn-primary w-100 shadow-none">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Our services-->
+        <section class="our-services py-5 bg-light">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center text-sm-start mb-4 mb-md-5">
+                                <h2 class="fs-2 fw-bold text-decoration-underline">Our Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <div class="card border-light shadow-sm h-100">
+                                <div class="card-body">
+                                    <div
+                                        class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
+                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                    </div>
+                                    <div
+                                        class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
+                                        <h3 class="my-2 h5 fw-bold">Property Booking</h3>
+                                        <p class="lh-lg">Nunc. Lectus eget. Iaculis dui velit velit turpis lacus nostra
+                                            a
+                                            aliquet integer</p>
+                                        <a href="" class="text-primary text-decoration-none fw-semibold mt-auto">Read
+                                            more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <div class="card border-light shadow-sm h-100">
+                                <div class="card-body">
+                                    <div
+                                        class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
+                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                    </div>
+                                    <div
+                                        class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
+                                        <h3 class="my-2 h5 fw-bold">Payment Guarantee</h3>
+                                        <p class="lh-lg">Nunc. Lectus eget. Iaculis dui velit velit turpis lacus nostra
+                                            a
+                                            aliquet integer</p>
+                                        <a href="" class="text-primary text-decoration-none fw-semibold">Read
+                                            more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <div class="card border-light shadow-sm h-100">
+                                <div class="card-body">
+                                    <div
+                                        class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
+                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                    </div>
+                                    <div
+                                        class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
+                                        <h3 class="my-2 h5 fw-bold">House Management</h3>
+                                        <p class="lh-lg">Nunc. Lectus eget. Iaculis dui velit velit turpis lacus nostra
+                                            a
+                                            aliquet integer</p>
+                                        <a href="" class="text-primary text-decoration-none fw-semibold mt-auto">Read
+                                            more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <div class="card border-light shadow-sm h-100">
+                                <div class="card-body">
+                                    <div
+                                        class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
+                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                    </div>
+                                    <div
+                                        class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
+                                        <h3 class="my-2 h5 fw-bold">Property Deal</h3>
+                                        <p class="lh-lg">Nunc. Lectus eget. Iaculis dui velit velit turpis lacus nostra
+                                            a
+                                            aliquet integer</p>
+                                        <a href="" class="text-primary text-decoration-none fw-semibold">Read
+                                            more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Recent Properties-->
+        <section class="recent-properties py-5">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center text-sm-start mb-4 mb-md-5">
+                                <h2 class="fs-2 fw-bold text-decoration-underline m-0">Recent Properties</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="Images/property-grid-1.png" class="card-img-top" alt="p-1">
+                                </div>
+                                <div class="card-body pb-0 d-flex flex-column gap-2">
+                                    <div>
+                                        <h3 class="text-primary fs-6 fw-semibold">Appartment</h3>
+                                        <h4 class="card-tex h6 fw-bold">Apolo family House Residense</h4>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <p class="m-0 fw-medium">4213 Duff Avenue South Burlington, VT 05403 </p>
+                                    </div>
+                                    <ul class="d-flex list-unstyled gap-1 gap-md-3 flex-column flex-sm-row">
+                                        <li><span class="fw-semibold">Rooms:</span> 7</li>
+                                        <li><span class="fw-semibold">Beds:</span> 5</li>
+                                        <li><span class="fw-semibold">Area:</span> 1200 Sqft</li>
+                                    </ul>
+                                </div>
+                                <hr class="my-0" />
+                                <div class="card-body">
+                                    <div class="d-flex gap-1 align-items-center justify-content-between">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <img src="Images/1.jpg" class="rounded-circle object-fit-cover" width="40"
+                                                height="40" alt="img" />
+                                            <span class="fw-medium">Ali Tufan</span>
+                                        </div>
+                                        <p class="fw-medium text-secondary m-0">2 month ago</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="Images/property-grid-2.png" class="card-img-top" alt="p-1">
+                                </div>
+                                <div class="card-body pb-0 d-flex flex-column gap-2">
+                                    <div>
+                                        <h3 class="text-primary fs-6 fw-semibold">Appartment</h3>
+                                        <h4 class="card-tex h6 fw-bold">Apolo family House Residense</h4>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <p class="m-0 fw-medium">4213 Duff Avenue South Burlington, VT 05403 </p>
+                                    </div>
+                                    <ul class="d-flex list-unstyled gap-1 gap-md-3 flex-column flex-sm-row">
+                                        <li><span class="fw-semibold">Rooms:</span> 7</li>
+                                        <li><span class="fw-semibold">Beds:</span> 5</li>
+                                        <li><span class="fw-semibold">Area:</span> 1200 Sqft</li>
+                                    </ul>
+                                </div>
+                                <hr class="my-0" />
+                                <div class="card-body">
+                                    <div class="d-flex gap-1 align-items-center justify-content-between">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <img src="Images/2.jpg" class="rounded-circle object-fit-cover" width="40"
+                                                height="40" alt="img" />
+                                            <span class="fw-medium">Ali Tufan</span>
+                                        </div>
+                                        <p class="fw-medium text-secondary m-0">2 month ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card h-100">
+                                <div class="card-image">
+                                    <img src="Images/property-grid-3.png" class="card-img-top" alt="p-1">
+                                </div>
+                                <div class="card-body pb-0 d-flex flex-column gap-2">
+                                    <div>
+                                        <h3 class="text-primary fs-6 fw-semibold">Appartment</h3>
+                                        <h4 class="card-tex h6 fw-bold">Apolo family House Residense</h4>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-start">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <p class="m-0 fw-medium">4213 Duff Avenue South Burlington, VT 05403 </p>
+                                    </div>
+                                    <ul class="d-flex list-unstyled gap-1 gap-md-3 flex-column flex-sm-row">
+                                        <li><span class="fw-semibold">Rooms:</span> 7</li>
+                                        <li><span class="fw-semibold">Beds:</span> 5</li>
+                                        <li><span class="fw-semibold">Area:</span> 1200 Sqft</li>
+                                    </ul>
+                                </div>
+                                <hr class="my-0" />
+                                <div class="card-body">
+                                    <div class="d-flex gap-1 align-items-center justify-content-between">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <img src="Images/3.jpg" class="rounded-circle object-fit-cover" width="40"
+                                                height="40" alt="img" />
+                                            <span class="fw-medium">Ali Tufan</span>
+                                        </div>
+                                        <p class="fw-medium text-secondary m-0">2 month ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--What You Area Looking For?-->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center text-sm-start mb-4 mb-md-5">
+                            <h2 class="fs-2 fw-bold text-decoration-underline m-0 mb-2">What You Area Looking For?</h2>
+                            <p class="fs-6">Mauris primis turpis Laoreet magna felis mi amet quam
+                                enim
+                                curae. Sodales semper tempor dictum faucibus habitasse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card p-3 p-xxl-4 border-light h-100">
+                            <div class="card-body text-center">
+                                <div class="card-box-icon mb-3">
+                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                </div>
+                                <div class="content">
+                                    <h3 class="fs-4 fw-bold m-0 mb-1">House</h3>
+                                    <p class="fs-6">Tellus lobortis dapibus erat eu et. Senectus quam vitae
+                                        in
+                                        arcu nisi quam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card p-3 p-xxl-4 border-light h-100">
+                            <div class="card-body text-center">
+                                <div class="card-box-icon mb-3">
+                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                </div>
+                                <div class="content">
+                                    <h3 class="fs-4 fw-bold m-0 mb-1">Land</h3>
+                                    <p class="fs-6">Tellus lobortis dapibus erat eu et. Senectus quam vitae
+                                        in
+                                        arcu nisi quam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card p-3 p-xxl-4 border-light h-100">
+                            <div class="card-body text-center">
+                                <div class="card-box-icon mb-3">
+                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                </div>
+                                <div class="content">
+                                    <h3 class="fs-4 fw-bold m-0 mb-1">Office</h3>
+                                    <p class="fs-6">Tellus lobortis dapibus erat eu et. Senectus quam vitae
+                                        in
+                                        arcu nisi quam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card p-3 p-xxl-4 border-light h-100">
+                            <div class="card-body text-center">
+                                <div class="card-box-icon mb-3">
+                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                </div>
+                                <div class="content">
+                                    <h3 class="fs-4 fw-bold m-0 mb-1">Bussiness</h3>
+                                    <p class="fs-6">Tellus lobortis dapibus erat eu et. Senectus quam vitae
+                                        in
+                                        arcu nisi quam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimonial-->
+        <section class="testimonial py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center text-sm-start mb-4 mb-md-5">
+                            <h2 class="fs-2 fw-bold text-decoration-underline m-0">Testimonial</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper pb-5">
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-4 h-100">
+                                <div class="card-body p-0 d-flex flex-column gap-3">
+                                    <div>
+                                        <p class="m-0">“Posuere mus curabitur parturient scelerisque suspendisse
+                                            elementum
+                                            facilisis dignissim non purus torquent turpis interdum hendrerit erat
+                                            ultrices
+                                            pretium risus elementum. Magnis sit. Auctor quam. Mollis. Bibendum fames
+                                            lacus.
+                                            Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna
+                                            varius.
+                                            Sollicitudin pede sapien taciti dui senectus sit diam curabitur Lacus
+                                            sapien.”</p>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <img src="images/1.jpg" alt="t-1" class="rounded-circle" width="50"
+                                            height="50" />
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Mark Wiggins</p>
+                                            <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-4 h-100">
+                                <div class="card-body p-0 d-flex flex-column gap-3">
+                                    <div>
+                                        <p class="m-0">“Posuere mus curabitur parturient scelerisque suspendisse
+                                            elementum
+                                            facilisis dignissim non purus torquent turpis interdum hendrerit erat
+                                            ultrices
+                                            pretium risus elementum. Magnis sit. Auctor quam. Mollis. Bibendum fames
+                                            lacus.
+                                            Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna
+                                            varius.
+                                            Sollicitudin pede sapien taciti dui senectus sit diam curabitur Lacus
+                                            sapien.”</p>
+                                    </div>
+
+                                    <div class="d-flex gap-2">
+                                        <img src="images/2.jpg" alt="t-2" class="rounded-circle" width="50"
+                                            height="50" />
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Mark Wiggins</p>
+                                            <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-4 h-100">
+                                <div class="card-body p-0 d-flex flex-column gap-3">
+                                    <div>
+                                        <p class="m-0">“Posuere mus curabitur parturient scelerisque suspendisse
+                                            elementum
+                                            facilisis dignissim non purus torquent turpis interdum hendrerit erat
+                                            ultrices
+                                            pretium risus elementum. Magnis sit. Auctor quam. Mollis. Bibendum fames
+                                            lacus.
+                                            Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna
+                                            varius.
+                                            Sollicitudin pede sapien taciti dui senectus sit diam curabitur Lacus
+                                            sapien.”</p>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <img src="images/3.jpg" alt="t-2" class="rounded-circle" width="50" height="50">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Mark Wiggins</p>
+                                            <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-4 h-100">
+                                <div class="card-body p-0 d-flex flex-column gap-3">
+                                    <div>
+                                        <p class="m-0">“Posuere mus curabitur parturient scelerisque suspendisse
+                                            elementum
+                                            facilisis dignissim non purus torquent turpis interdum hendrerit erat
+                                            ultrices
+                                            pretium risus elementum. Magnis sit. Auctor quam. Mollis. Bibendum fames
+                                            lacus.
+                                            Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna
+                                            varius.
+                                            Sollicitudin pede sapien taciti dui senectus sit diam curabitur Lacus
+                                            sapien.”</p>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <img src="images/1.jpg" alt="t-1" class="rounded-circle" width="50"
+                                            height="50" />
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Mark Wiggins</p>
+                                            <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-4 h-100">
+                                <div class="card-body p-0 d-flex flex-column gap-3">
+                                    <div>
+                                        <p class="m-0">“Posuere mus curabitur parturient scelerisque suspendisse
+                                            elementum
+                                            facilisis dignissim non purus torquent turpis interdum hendrerit erat
+                                            ultrices
+                                            pretium risus elementum. Magnis sit. Auctor quam. Mollis. Bibendum fames
+                                            lacus.
+                                            Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna
+                                            varius.
+                                            Sollicitudin pede sapien taciti dui senectus sit diam curabitur Lacus
+                                            sapien.”</p>
+                                    </div>
+
+                                    <div class="d-flex gap-2">
+                                        <img src="images/2.jpg" alt="t-2" class="rounded-circle" width="50"
+                                            height="50" />
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Mark Wiggins</p>
+                                            <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-3 p-md-4 h-100">
+                                <div class="card-body p-0 d-flex flex-column gap-3">
+                                    <div>
+                                        <p class="m-0">“Posuere mus curabitur parturient scelerisque suspendisse
+                                            elementum
+                                            facilisis dignissim non purus torquent turpis interdum hendrerit erat
+                                            ultrices
+                                            pretium risus elementum. Magnis sit. Auctor quam. Mollis. Bibendum fames
+                                            lacus.
+                                            Fringilla aliquet mattis lacinia quam a montes maecenas parturient urna
+                                            varius.
+                                            Sollicitudin pede sapien taciti dui senectus sit diam curabitur Lacus
+                                            sapien.”</p>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <img src="images/3.jpg" alt="t-2" class="rounded-circle" width="50" height="50">
+                                        <div>
+                                            <p class="mb-0 fw-semibold">Mark Wiggins</p>
+                                            <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--for sale-->
+        <section class="bg-primary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div
+                            class="d-flex align-items-center justify-content-between align-items-center flex-column flex-lg-row gap-4 text-center text-lg-start">
+                            <h2 class="fs-3 fw-bold m-0 text-white">Are you looking for a House or Customer for your
+                                Property sale?</h2>
+                            <a href="" class="btn btn-light flex-shrink-0">Subscribe Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row pt-5 g-4">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <img src="images/logo-white.png" alt="logo">
+                    <div class="info py-3">
+                        <span class="text-secondary">Risus commodo congue augue phas ellus morbi hymenaeos ante
+                            tincidu eu orci dictum bibe ndum lacus pla tea primis mi lacinia</span>
+                    </div>
+                    <div class="d-inline-flex gap-3 align-items-center social-links">
+                        <a href="" target="_blank" aria-label="link to email"><i class="fas fa-envelope fs-4"></i></a>
+                        <a href="" target="_blank" aria-label="link to facebook"><i class="fab fa-facebook fs-4"></i></a>
+                        <a href="" target="_blank" aria-label="link to twitter"><i class="fab fa-twitter fs-4"></i></a>
+                        <a href="" target="_blank" aria-label="link to instagram"><i class="fab fa-instagram fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <h3 class="text-white mb-3">Quick Links</h3>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li class="list-style">
+                            <a href="" class="text-secondary text-decoration-none">Our Services</a>
+                        </li>
+                        <li class="list-style">
+                            <a href="" class="text-secondary text-decoration-none">Investment Solution</a>
+                        </li>
+                        <li class="list-style">
+                            <a href="" class="text-secondary text-decoration-none">Frequenly Ask Question</a>
+                        </li>
+                        <li class="list-style">
+                            <a href="" class="text-secondary text-decoration-none">How It Work</a>
+                        </li>
+                        <li class="list-style">
+                            <a href="" class="text-secondary text-decoration-none">Become a Member</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <h3 class="text-white mb-3">Contact Info</h3>
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-map fs-4 text-light"></i>
+                            <span class="text-secondary">Unicoder Design Agency 301 The Greenhouse, Custard
+                                Factory, London, E3 8DY.</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-phone fs-4 text-light"></i>
+                            <span class="text-secondary">+1 246-345-0695</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="fas fa-envelope fs-4 text-light"></i>
+                            <span class="text-secondary">helpline@homex.com</span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <h3 class="text-white mb-3">Appointment</h3>
+                    <div class="appointment py-6">
+                        <span class="text-secondary">Litora ligula dapibus scelerisque vitae, fermentum aenean
+                            gravida lobortis mus pulvinar magna turient primis.</span>
+                    </div>
+                    <button class="btn btn-primary col-md-12 py-2 my-4">Register Now</button>
+                </div>
+            </div>
+
+            <hr class="" />
+            <div class="row pb-3 py-md-4">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row gap-3">
+                        <p class="text-secondary m-0">&copy; 2021 Uniland All right reserved</p>
+                        <ul class="list-unstyled d-flex gap-2 m-0">
+                            <li>
+                                <a href="" class="text-secondary text-decoration-none">Privacy & Policy</a>
+                            </li>
+                            <li class="text-secondary">|</li>
+                            <li>
+                                <a href="" class="text-secondary text-decoration-none">Site map</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            lazy: true,
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1600: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

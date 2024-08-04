@@ -1,0 +1,120 @@
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+:root {
+    --color-primary: #53b141;
+    --color-white: #ffffff;
+    --color-black: 0, 0, 0;
+}
+
+/* Utility Class */
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+
+/* Button */
+
+.btn-primary {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+    border: 1px solid var(--color-primary) !important;
+}
+
+.btn-primary:is(:hover, :active) {
+    opacity: 0.8 !important;
+}
+
+
+.btn-outline-primary {
+    border: 1px solid var(--color-primary) !important;
+    color: var(--color-primary) !important;
+}
+
+.btn-outline-primary:is(:hover, :active) {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
+
+/* Form Element Component */
+
+:is(.form-control, .form-select):focus {
+    border-color: var(--color-primary) !important;
+}
+
+/* Header  */
+
+.social-links a {
+    color: var(--color-white);
+}
+
+.social-links a:hover svg {
+    color: var(--color-primary);
+}
+
+.nav-link,
+.dropdown-item {
+    color: rgb(var(--color-black));
+    font-weight: 500;
+}
+
+
+/* Hero Section  */
+.carousel-caption-custom {
+    right: 0;
+    left: 0;
+    background-color: rgba(var(--color-black), 0.75);
+}
+
+
+/* Our Services */
+.card-body-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.card {
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px !important;
+    transform: translateY(-12px);
+    border-color: transparent !important;
+}
+
+
+/* Swiper SLider  */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--color-primary, var(--swiper-theme-color)) !important;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 12px) !important;
+}
