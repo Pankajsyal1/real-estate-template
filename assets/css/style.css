@@ -1,5 +1,5 @@
-html{
-    scroll-padding: 110px;
+html {
+  scroll-padding: 110px;
 }
 body {
   font-family: "Libre Baskerville", serif;
@@ -107,6 +107,11 @@ body {
   transform: translateY(0px);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  border: 1px solid #eaeaea;
+}
+
+.card > hr {
+  border: 1px solid #cccccc;
 }
 
 .card:hover {
@@ -126,9 +131,12 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Use flex to stretch cards */
+  flex-direction: column; /* Stack content vertically */
+}
+
+#mySwiper .swiper-slide {
+  height: auto; /* Allow slides to match the tallest card */
 }
 
 .swiper-pagination-bullet-active {
@@ -142,8 +150,8 @@ body {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 12px) !important;
 }
 
+/* Section Style */
 .section-title {
-  font-size: 2rem;
   color: rgb(var(--color-black));
   position: relative;
   z-index: 2;
@@ -169,4 +177,14 @@ body {
   .zigzag-line {
     margin-left: 0;
   }
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--color-primary);
+  color: var(--color-white) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }
