@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
-    <title>UniLand</title>
-    <meta name="description" content="A real estate landing page.">
-    <script src="assets/icons/all.js"></script>
+    <link rel="icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
+    <title>HomeNest | Find Your Perfect Property</title>
+    <meta name="description"
+        content="HomeNest is your trusted platform for buying, selling, and renting properties. Discover modern homes, connect with expert agents, and start your real estate journey with confidence.">
+    <meta name="keywords"
+        content="real estate, property, home, apartment, house, agent, buy, sell, rent, HomeNest, investment, commercial, residential, listings, realtor, broker">
+    <meta name="author" content="HomeNest Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta property="og:title" content="HomeNest | Find Your Perfect Property">
+    <meta property="og:description"
+        content="Find your dream home or property with HomeNest. Browse verified listings, connect with expert agents, and start your real estate journey today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://homenest.com/">
+    <meta property="og:image" content="https://homenest.com/assets/images/logo/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HomeNest | Find Your Perfect Property">
+    <meta name="twitter:description"
+        content="HomeNest helps you buy, sell, or rent properties with ease. Discover listings and connect with trusted agents.">
+    <meta name="twitter:image" content="https://homenest.com/assets/images/logo/logo.png">
+    <link rel="canonical" href="https://homenest.com/">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <!-- <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" /> -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -23,28 +41,61 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="sticky-top shadow">
         <div class="bg-dark py-3">
             <div class="container">
                 <div class="d-flex flex-column flex-sm-row gap-2 justify-content-sm-between align-items-center">
                     <div class="d-inline-flex gap-2 text-white align-items-center social-links">
-                        <i class="fas fa-phone-alt"></i>
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
                         <span>Support ? </span>
                         <a class="text-primary" href="tel:+14357824312">+1-435-782-4312</a>
                     </div>
                     <div class="d-inline-flex gap-3 align-items-center social-links">
-                        <a href="" target="_blank" aria-label="link to email"><i class="fas fa-envelope fs-5"></i></a>
-                        <a href="" target="_blank" aria-label="link to facebook"><i
-                                class="fab fa-facebook fs-5"></i></a>
-                        <a href="" target="_blank" aria-label="link to twitter"><i class="fab fa-twitter fs-5"></i></a>
-                        <a href="" target="_blank" aria-label="link to instagram"><i
-                                class="fab fa-instagram fs-5"></i></a>
+                        <a href="" target="_blank" aria-label="link to linkedin">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" aria-label="link to facebook">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" aria-label="link to twitter">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+
+                        </a>
+                        <a href="" target="_blank" aria-label="link to instagram">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <!--nav-bar-->
-        <div class="sticky-top bg-white z-3">
+        <div class="bg-white">
             <div class="container">
                 <nav class="navbar navbar-expand-xl navbar-light">
                     <a class="navbar-brand col-md-3" href="/">
@@ -114,55 +165,54 @@
     <main>
 
         <!--hero Slider-->
-        <section class="hero-slider mb-5">
+        <section class="hero-slider">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active position-relative">
-                        <img src="assets/Images/banner-images/banner-1.jpg" class="d-block object-fit-cover w-100" height="600" alt="s-1">
+                        <img src="assets/Images/banner-images/banner-1.jpg" class="d-block object-fit-cover w-100"
+                            height="600" alt="s-1">
                         <div
                             class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
-                            <h1 class="text-primary fw-bold">WE CONSTRUCT YOUR HOUSE</h1>
-                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
-                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
-                                Nec vel ac penatibus hendrerit sociis purus, nec
-                                rhoncus ac vel.</p>
-                            <button class="btn btn-outline-primary fw-semibold">CONTACT US</button>
+                            <h1 class="text-primary fw-bolder">Welcome to Home Nest</h1>
+                            <p>Your journey to a new home starts here. Explore a curated selection of modern properties,
+                                connect with trusted agents, and discover the perfect place for your family or business.
+                                Experience real estate made simple and rewarding.</p>
+                            <a href="#search" class="btn btn-primary btn-lg fw-semibold">Browse Properties</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/Images/banner-images/banner-2.jpg" class="d-block object-fit-cover w-100" height="600" alt="s-3">
+                        <img src="assets/Images/banner-images/banner-2.jpg" class="d-block object-fit-cover w-100"
+                            height="600" alt="s-3">
                         <div
                             class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
-                            <h1 class="text-primary fw-bold">FIND YOUR DREAM HOUSE</h1>
-                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
-                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
-                                Nec vel ac penatibus hendrerit sociis purus, nec
-                                rhoncus ac vel.</p>
-                            <button class="btn btn-outline-primary fw-semibold">SEARCH PROPERTY</button>
+                            <h1 class="text-primary fw-bolder">Find Your Dream Home</h1>
+                            <p>Discover homes that match your lifestyle and budget. From cozy apartments to spacious
+                                family houses, HomeNest offers verified listings and expert guidance every step of the
+                                way.</p>
+                            <a href="#search" class="btn btn-primary btn-lg fw-semibold">Start Your Search</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/Images/banner-images/banner-3.jpg" class="d-block object-fit-cover w-100" height="600" alt="s-3">
+                        <img src="assets/Images/banner-images/banner-3.jpg" class="d-block object-fit-cover w-100"
+                            height="600" alt="s-3">
                         <div
                             class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
-                            <h1 class="text-primary fw-bold">FIND YOUR DREAM HOUSE</h1>
-                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
-                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
-                                Nec vel ac penatibus hendrerit sociis purus, nec
-                                rhoncus ac vel.</p>
-                            <button class="btn btn-outline-primary fw-semibold">SEARCH PROPERTY</button>
+                            <h1 class="text-primary fw-bolder">Expert Agents, Trusted Service</h1>
+                            <p>Our experienced agents are here to help you navigate the real estate market with
+                                confidence. Get personalized recommendations and support from professionals who care
+                                about your goals.</p>
+                            <a href="#search" class="btn btn-primary btn-lg fw-semibold">Meet Our Agents</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/Images/banner-images/banner-4.jpg" class="d-block object-fit-cover w-100" height="600" alt="s-3">
+                        <img src="assets/Images/banner-images/banner-4.jpg" class="d-block object-fit-cover w-100"
+                            height="600" alt="s-3">
                         <div
                             class="carousel-caption carousel-caption-custom m-auto col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6 col-xxl-6 p-3 p-md-4 rounded-3">
-                            <h1 class="text-primary fw-bold">FIND YOUR DREAM HOUSE</h1>
-                            <p>Aliquet dignissim orci dignissim vehicula phasellus Erat etiam posuere felis donec augue
-                                dapibus. Congue tempus pede urna augue vivamus consectetuer. Rutrum. Litora vulputate
-                                Nec vel ac penatibus hendrerit sociis purus, nec
-                                rhoncus ac vel.</p>
-                            <button class="btn btn-outline-primary fw-semibold">SEARCH PROPERTY</button>
+                            <h1 class="text-primary fw-bolder">Start Your Next Chapter</h1>
+                            <p>Whether buying, selling, or renting, HomeNest is your partner for a smooth and successful
+                                move. Begin your next chapter with confidence and peace of mind.</p>
+                            <a href="#search" class="btn btn-primary btn-lg fw-semibold">Get Started Today</a>
                         </div>
                     </div>
                 </div>
@@ -180,21 +230,36 @@
         </section>
 
         <!--search property-->
-        <section class="search-property py-5">
+        <section class="search-property py-5" id="search">
             <div class="container">
-                <div class="row">
-                    <h2 class="fs-2 fw-bold text-decoration-underline visually-hidden">Search Property</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="text-center mb-3 mb-4 mb-md-5">
+                            <h2 class="fw-bold section-title">
+                                Find Your Dream Property
+                            </h2>
+                            <svg class="zigzag-line mx-auto" viewBox="0 0 120 10" preserveAspectRatio="none">
+                                <polyline
+                                    points="0,5 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10 110,0 120,5"
+                                    fill="none" stroke="var(--color-primary)" stroke-width="2" />
+                            </svg>
+                            <p class="fs-6 mt-3 text-muted">
+                                Search by type, location, or keyword below
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row p-3 p-md-4 p-xl-5 g-3 shadow-sm border rounded-3">
+
+                <div class="row p-3 p-md-4 p-xl-5 g-3 shadow-sm border rounded-4 bg-white">
                     <div class="col-sm-6 col-md-6 col-lg-3">
-                        <input type="text" class="form-control shadow-none" placeholder="Type Keyward..">
+                        <input type="text" class="form-control shadow-none" placeholder="Type Keyword...">
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-3">
                         <select id="inputStateProperty" aria-label="property type" class="form-select shadow-none">
                             <option selected>Property Type</option>
                             <option>House</option>
                             <option>Office</option>
-                            <option>Appartment</option>
+                            <option>Apartment</option>
                             <option>Small Family</option>
                         </select>
                     </div>
@@ -208,11 +273,12 @@
                         </select>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                        <button class="btn btn-primary w-100 shadow-none">Search</button>
+                        <button class="btn btn-primary w-100 shadow-sm py-2 fw-semibold">Search</button>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!--Our services-->
         <section class="our-services py-5 bg-light">
@@ -220,8 +286,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="text-center text-sm-start mb-4 mb-md-5">
-                                <h2 class="fs-2 fw-bold text-decoration-underline">Our Services</h2>
+                            <div class="text-center text-sm-start mb-3 mb-4 mb-md-5">
+                                <h2 class="fw-bold section-title">
+                                    Our Services
+                                </h2>
+                                <svg class="zigzag-line" viewBox="0 0 120 10" preserveAspectRatio="none">
+                                    <polyline
+                                        points="0,5 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10 110,0 120,5"
+                                        fill="none" stroke="var(--color-primary)" stroke-width="2" />
+                                </svg>
+
+                                <p class="fs-6 mt-3 text-muted">
+                                    Mauris primis turpis Laoreet magna felis mi amet quam
+                                    enim
+                                    curae. Sodales semper tempor dictum faucibus habitasse.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +310,12 @@
                                 <div class="card-body">
                                     <div
                                         class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
-                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            viewBox="0 0 20 20" fill="#fff">
+                                            <path
+                                                d="M10.75 16.82A7.462 7.462 0 0 1 15 15.5c.71 0 1.396.098 2.046.282A.75.75 0 0 0 18 15.06v-11a.75.75 0 0 0-.546-.721A9.006 9.006 0 0 0 15 3a8.963 8.963 0 0 0-4.25 1.065V16.82ZM9.25 4.065A8.963 8.963 0 0 0 5 3c-.85 0-1.673.118-2.454.339A.75.75 0 0 0 2 4.06v11a.75.75 0 0 0 .954.721A7.506 7.506 0 0 1 5 15.5c1.579 0 3.042.487 4.25 1.32V4.065Z" />
+                                        </svg>
+
                                     </div>
                                     <div
                                         class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
@@ -250,26 +334,13 @@
                                 <div class="card-body">
                                     <div
                                         class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
-                                        <i class="fas fa-house-user fs-3 text-light"></i>
-                                    </div>
-                                    <div
-                                        class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
-                                        <h3 class="my-2 h5 fw-bold">Payment Guarantee</h3>
-                                        <p class="lh-lg">Nunc. Lectus eget. Iaculis dui velit velit turpis lacus nostra
-                                            a
-                                            aliquet integer</p>
-                                        <a href="" class="text-primary text-decoration-none fw-semibold">Read
-                                            more...</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <div class="card border-light shadow-sm h-100">
-                                <div class="card-body">
-                                    <div
-                                        class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
-                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            viewBox="0 0 20 20" fill="#fff">
+                                            <path fill-rule="evenodd"
+                                                d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
                                     </div>
                                     <div
                                         class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
@@ -288,7 +359,37 @@
                                 <div class="card-body">
                                     <div
                                         class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
-                                        <i class="fas fa-house-user fs-3 text-light"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            viewBox="0 0 20 20" fill="#fff">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 4A1.5 1.5 0 0 0 1 5.5V6h18v-.5A1.5 1.5 0 0 0 17.5 4h-15ZM19 8.5H1v6A1.5 1.5 0 0 0 2.5 16h15a1.5 1.5 0 0 0 1.5-1.5v-6ZM3 13.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75Zm4.75-.75a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+
+                                    </div>
+                                    <div
+                                        class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
+                                        <h3 class="my-2 h5 fw-bold">Payment Guarantee</h3>
+                                        <p class="lh-lg">Nunc. Lectus eget. Iaculis dui velit velit turpis lacus nostra
+                                            a
+                                            aliquet integer</p>
+                                        <a href="" class="text-primary text-decoration-none fw-semibold">Read
+                                            more...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                            <div class="card border-light shadow-sm h-100">
+                                <div class="card-body">
+                                    <div
+                                        class="card-body-icon rounded-3 d-flex justify-content-center align-items-center mx-auto mx-sm-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            viewBox="0 0 20 20" fill="#fff">
+                                            <path
+                                                d="M1 8.25a1.25 1.25 0 1 1 2.5 0v7.5a1.25 1.25 0 1 1-2.5 0v-7.5ZM11 3V1.7c0-.268.14-.526.395-.607A2 2 0 0 1 14 3c0 .995-.182 1.948-.514 2.826-.204.54.166 1.174.744 1.174h2.52c1.243 0 2.261 1.01 2.146 2.247a23.864 23.864 0 0 1-1.341 5.974C17.153 16.323 16.072 17 14.9 17h-3.192a3 3 0 0 1-1.341-.317l-2.734-1.366A3 3 0 0 0 6.292 15H5V8h.963c.685 0 1.258-.483 1.612-1.068a4.011 4.011 0 0 1 2.166-1.73c.432-.143.853-.386 1.011-.814.16-.432.248-.9.248-1.388Z" />
+                                        </svg>
+
                                     </div>
                                     <div
                                         class="card-body-content text-center text-sm-start d-flex flex-column flex-grow-1">
@@ -313,8 +414,21 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="text-center text-sm-start mb-4 mb-md-5">
-                                <h2 class="fs-2 fw-bold text-decoration-underline m-0">Recent Properties</h2>
+                            <div class="text-center text-sm-start mb-3 mb-4 mb-md-5">
+                                <h2 class="fw-bold section-title">
+                                    Recent Properties
+                                </h2>
+                                <svg class="zigzag-line" viewBox="0 0 120 10" preserveAspectRatio="none">
+                                    <polyline
+                                        points="0,5 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10 110,0 120,5"
+                                        fill="none" stroke="var(--color-primary)" stroke-width="2" />
+                                </svg>
+
+                                <p class="fs-6 mt-3 text-muted">
+                                    Mauris primis turpis Laoreet magna felis mi amet quam
+                                    enim
+                                    curae. Sodales semper tempor dictum faucibus habitasse.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -330,7 +444,14 @@
                                         <h4 class="card-tex h6 fw-bold">Apolo family House Residense</h4>
                                     </div>
                                     <div class="d-flex gap-2 align-items-start">
-                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <span class="text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
                                         <p class="m-0 fw-medium">4213 Duff Avenue South Burlington, VT 05403 </p>
                                     </div>
                                     <ul class="d-flex list-unstyled gap-1 gap-md-3 flex-column flex-sm-row">
@@ -343,8 +464,8 @@
                                 <div class="card-body">
                                     <div class="d-flex gap-1 align-items-center justify-content-between">
                                         <div class="d-flex gap-2 align-items-center">
-                                            <img src="assets/Images/users/1.jpg" class="rounded-circle object-fit-cover" width="40"
-                                                height="40" alt="img" />
+                                            <img src="assets/Images/users/1.jpg" class="rounded-circle object-fit-cover"
+                                                width="40" height="40" alt="img" />
                                             <span class="fw-medium">Ali Tufan</span>
                                         </div>
                                         <p class="fw-medium text-secondary m-0">2 month ago</p>
@@ -364,7 +485,14 @@
                                         <h4 class="card-tex h6 fw-bold">Apolo family House Residense</h4>
                                     </div>
                                     <div class="d-flex gap-2 align-items-start">
-                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <span class="text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
                                         <p class="m-0 fw-medium">4213 Duff Avenue South Burlington, VT 05403 </p>
                                     </div>
                                     <ul class="d-flex list-unstyled gap-1 gap-md-3 flex-column flex-sm-row">
@@ -377,8 +505,8 @@
                                 <div class="card-body">
                                     <div class="d-flex gap-1 align-items-center justify-content-between">
                                         <div class="d-flex gap-2 align-items-center">
-                                            <img src="assets/Images/users/2.jpg" class="rounded-circle object-fit-cover" width="40"
-                                                height="40" alt="img" />
+                                            <img src="assets/Images/users/2.jpg" class="rounded-circle object-fit-cover"
+                                                width="40" height="40" alt="img" />
                                             <span class="fw-medium">Ali Tufan</span>
                                         </div>
                                         <p class="fw-medium text-secondary m-0">2 month ago</p>
@@ -397,7 +525,14 @@
                                         <h4 class="card-tex h6 fw-bold">Apolo family House Residense</h4>
                                     </div>
                                     <div class="d-flex gap-2 align-items-start">
-                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <span class="text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                    d="M8.161 2.58a1.875 1.875 0 0 1 1.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0 1 21.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 0 1-1.676 0l-4.994-2.497a.375.375 0 0 0-.336 0l-3.868 1.935A1.875 1.875 0 0 1 2.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437ZM9 6a.75.75 0 0 1 .75.75V15a.75.75 0 0 1-1.5 0V6.75A.75.75 0 0 1 9 6Zm6.75 3a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0V9Z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
                                         <p class="m-0 fw-medium">4213 Duff Avenue South Burlington, VT 05403 </p>
                                     </div>
                                     <ul class="d-flex list-unstyled gap-1 gap-md-3 flex-column flex-sm-row">
@@ -410,8 +545,8 @@
                                 <div class="card-body">
                                     <div class="d-flex gap-1 align-items-center justify-content-between">
                                         <div class="d-flex gap-2 align-items-center">
-                                            <img src="assets/Images/users/3.jpg" class="rounded-circle object-fit-cover" width="40"
-                                                height="40" alt="img" />
+                                            <img src="assets/Images/users/3.jpg" class="rounded-circle object-fit-cover"
+                                                width="40" height="40" alt="img" />
                                             <span class="fw-medium">Ali Tufan</span>
                                         </div>
                                         <p class="fw-medium text-secondary m-0">2 month ago</p>
@@ -424,16 +559,63 @@
             </div>
         </section>
 
+        <section class="position-relative py-5 text-white bg-secondary">
+            <div class="position-absolute top-50 start-0 translate-middle-y" style="z-index: 1;">
+                <svg width="120" height="120">
+                    <circle cx="60" cy="60" r="60" fill="rgba(255, 255, 255, 0.08)" />
+                </svg>
+            </div>
+
+            <div class="position-absolute top-50 end-0 translate-middle-y" style="z-index: 1;">
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="50" fill="rgba(255, 255, 255, 0.05)" />
+                </svg>
+            </div>
+
+            <div class="container position-relative z-2">
+                <div class="row align-items-center justify-content-between text-center text-lg-start">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <h2 class="display-6 fw-bold mb-2">Find the Space You Deserve</h2>
+                        <p class="lead mb-0">
+                            Book your appointment now and take a step closer to your perfect property.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="" class="btn btn-light text-success px-4 py-2 fw-semibold shadow-sm">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
         <!--What You Area Looking For?-->
         <section class="py-5 bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-center text-sm-start mb-4 mb-md-5">
-                            <h2 class="fs-2 fw-bold text-decoration-underline m-0 mb-2">What You Area Looking For?</h2>
-                            <p class="fs-6">Mauris primis turpis Laoreet magna felis mi amet quam
+                        <div class="text-center text-sm-start mb-3 mb-4 mb-md-5">
+                            <h2 class="fw-bold section-title">
+                                What You Area Looking For?
+                            </h2>
+                            <svg class="zigzag-line" viewBox="0 0 120 10" preserveAspectRatio="none">
+                                <polyline
+                                    points="0,5 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10 110,0 120,5"
+                                    fill="none" stroke="var(--color-primary)" stroke-width="2" />
+                            </svg>
+
+                            <p class="fs-6 mt-3 text-muted">
+                                Mauris primis turpis Laoreet magna felis mi amet quam
                                 enim
-                                curae. Sodales semper tempor dictum faucibus habitasse.</p>
+                                curae. Sodales semper tempor dictum faucibus habitasse.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -441,8 +623,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card p-3 p-xxl-4 border-light h-100">
                             <div class="card-body text-center">
-                                <div class="card-box-icon mb-3">
-                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                <div class="card-box-icon mb-3 text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
                                 </div>
                                 <div class="content">
                                     <h3 class="fs-4 fw-bold m-0 mb-1">House</h3>
@@ -456,8 +644,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card p-3 p-xxl-4 border-light h-100">
                             <div class="card-body text-center">
-                                <div class="card-box-icon mb-3">
-                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                <div class="card-box-icon mb-3 text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-6.5 6.326a6.52 6.52 0 0 1-1.5.174 6.487 6.487 0 0 1-5.011-2.36l.49-.98a.423.423 0 0 1 .614-.164l.294.196a.992.992 0 0 0 1.491-1.139l-.197-.593a.252.252 0 0 1 .126-.304l1.973-.987a.938.938 0 0 0 .361-1.359.375.375 0 0 1 .239-.576l.125-.025A2.421 2.421 0 0 0 12.327 6.6l.05-.149a1 1 0 0 0-.242-1.023l-1.489-1.489a.5.5 0 0 1-.146-.353v-.067a6.5 6.5 0 0 1 5.392 9.23 1.398 1.398 0 0 0-.68-.244l-.566-.566a1.5 1.5 0 0 0-1.06-.439h-.172a1.5 1.5 0 0 0-1.06.44l-.593.592a.501.501 0 0 1-.13.093l-1.578.79a1 1 0 0 0-.553.894v.191a1 1 0 0 0 1 1h.5a.5.5 0 0 1 .5.5v.326Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
                                 </div>
                                 <div class="content">
                                     <h3 class="fs-4 fw-bold m-0 mb-1">Land</h3>
@@ -471,8 +665,14 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card p-3 p-xxl-4 border-light h-100">
                             <div class="card-body text-center">
-                                <div class="card-box-icon mb-3">
-                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                <div class="card-box-icon mb-3 text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M1 2.75A.75.75 0 0 1 1.75 2h10.5a.75.75 0 0 1 0 1.5H12v13.75a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1-.75-.75v-2.5a.75.75 0 0 0-.75-.75h-2.5a.75.75 0 0 0-.75.75v2.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5H2v-13h-.25A.75.75 0 0 1 1 2.75ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM8 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM8.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM14.25 6a.75.75 0 0 0-.75.75V17a1 1 0 0 0 1 1h3.75a.75.75 0 0 0 0-1.5H18v-9h.25a.75.75 0 0 0 0-1.5h-4Zm.5 3.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm.5 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
                                 </div>
                                 <div class="content">
                                     <h3 class="fs-4 fw-bold m-0 mb-1">Office</h3>
@@ -486,8 +686,16 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card p-3 p-xxl-4 border-light h-100">
                             <div class="card-body text-center">
-                                <div class="card-box-icon mb-3">
-                                    <i class="fas fa-building fs-1 text-primary"></i>
+                                <div class="card-box-icon mb-3 text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M6 3.75A2.75 2.75 0 0 1 8.75 1h2.5A2.75 2.75 0 0 1 14 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 0 1 6 4.193V3.75Zm6.5 0v.325a41.622 41.622 0 0 0-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25ZM10 10a1 1 0 0 0-1 1v.01a1 1 0 0 0 1 1h.01a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H10Z"
+                                            clip-rule="evenodd" />
+                                        <path
+                                            d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 0 1-9.274 0C3.985 17.585 3 16.402 3 15.055Z" />
+                                    </svg>
+
                                 </div>
                                 <div class="content">
                                     <h3 class="fs-4 fw-bold m-0 mb-1">Bussiness</h3>
@@ -502,13 +710,54 @@
             </div>
         </section>
 
+        <section class="cta-section position-relative py-5 text-white overflow-hidden bg-primary">
+            <!-- SVG Pattern Background -->
+            <svg class="position-absolute top-0 start-0 opacity-25" width="100%" height="100%">
+                <defs>
+                    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="1" cy="1" r="1" fill="white" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dotPattern)" />
+            </svg>
+
+            <div class="container position-relative">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-10 col-lg-8">
+                        <h2 class="display-5 fw-bold mb-3">Book Your Appointment Today</h2>
+                        <p class="lead text-white-50">
+                            Don’t miss the chance to connect with our professionals. Secure your appointment in just a
+                            few clicks.
+                        </p>
+                        <button class="btn btn-light text-primary fw-semibold px-4 py-2 mt-3">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!--Testimonial-->
         <section class="testimonial py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-center text-sm-start mb-4 mb-md-5">
-                            <h2 class="fs-2 fw-bold text-decoration-underline m-0">Testimonial</h2>
+                        <div class="text-center text-sm-start mb-3 mb-4 mb-md-5">
+                            <h2 class="fw-bold section-title">
+                                Testimonial
+                            </h2>
+                            <svg class="zigzag-line" viewBox="0 0 120 10" preserveAspectRatio="none">
+                                <polyline
+                                    points="0,5 10,0 20,10 30,0 40,10 50,0 60,10 70,0 80,10 90,0 100,10 110,0 120,5"
+                                    fill="none" stroke="var(--color-primary)" stroke-width="2" />
+                            </svg>
+
+                            <p class="fs-6 mt-3 text-muted">
+                                Mauris primis turpis Laoreet magna felis mi amet quam
+                                enim
+                                curae. Sodales semper tempor dictum faucibus habitasse.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -585,7 +834,8 @@
                                             sapien.”</p>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <img src="assets/Images/users/3.jpg" alt="t-2" class="rounded-circle" width="50" height="50">
+                                        <img src="assets/Images/users/3.jpg" alt="t-2" class="rounded-circle" width="50"
+                                            height="50">
                                         <div>
                                             <p class="mb-0 fw-semibold">Mark Wiggins</p>
                                             <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
@@ -665,7 +915,8 @@
                                             sapien.”</p>
                                     </div>
                                     <div class="d-flex gap-2">
-                                        <img src="assets/Images/users/3.jpg" alt="t-2" class="rounded-circle" width="50" height="50">
+                                        <img src="assets/Images/users/3.jpg" alt="t-2" class="rounded-circle" width="50"
+                                            height="50">
                                         <div>
                                             <p class="mb-0 fw-semibold">Mark Wiggins</p>
                                             <p class="text-primary fs-6 m-0 fw-mediun">CEO ( Grodins Group )</p>
@@ -697,23 +948,158 @@
         </section>
     </main>
 
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Updated Left SVG Illustration -->
+      <div class="col-lg-5 mb-4 mb-lg-0">
+       <img src="assets/Images/faq/faq.webp" class="img-fluid" alt="faq" />
+      </div>
+
+      <!-- Right FAQ Section -->
+      <div class="col-lg-7">
+        <h2 class="fw-bold mb-4" style="color: #53b141;">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          
+          <!-- FAQ 1 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true">
+                How does HomeNest help me find a property?
+              </button>
+            </h2>
+            <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                HomeNest offers a curated listing of properties, personalized filters, and expert agents to help you find a perfect match.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+                Can I list my property on HomeNest?
+              </button>
+            </h2>
+            <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                Yes! You can register and post your property details directly. Our agents will also assist in listing and visibility.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer3">
+                What types of properties can I find?
+              </button>
+            </h2>
+            <div id="answer3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                From apartments and villas to commercial spaces, HomeNest offers a wide range of property types for rent and sale.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer4">
+                Is it safe to deal with agents on HomeNest?
+              </button>
+            </h2>
+            <div id="answer4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                All our agents are verified professionals. We ensure secure and transparent transactions for your peace of mind.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer5">
+                Can I schedule a property visit online?
+              </button>
+            </h2>
+            <div id="answer5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                Yes, use the "Book Appointment" feature to schedule a visit at your convenience with the property owner or agent.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="faq6">
+              <button class="accordion-button collapsed text-dark fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#answer6">
+                Is HomeNest available in all cities?
+              </button>
+            </h2>
+            <div id="answer6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-muted">
+                We are expanding rapidly. You can currently explore listings in major cities, and new locations are added every month.
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     <footer class="bg-dark">
         <div class="container">
-            <div class="row pt-5 g-4">
-                <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="row pt-5">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <img src="assets/images/logo/logo-white.png" alt="logo">
                     <div class="info py-3">
                         <span class="text-secondary">Risus commodo congue augue phas ellus morbi hymenaeos ante
                             tincidu eu orci dictum bibe ndum lacus pla tea primis mi lacinia</span>
                     </div>
-                    <div class="d-inline-flex gap-3 align-items-center social-links">
-                        <a href="" target="_blank" aria-label="link to email"><i class="fas fa-envelope fs-4"></i></a>
-                        <a href="" target="_blank" aria-label="link to facebook"><i class="fab fa-facebook fs-4"></i></a>
-                        <a href="" target="_blank" aria-label="link to twitter"><i class="fab fa-twitter fs-4"></i></a>
-                        <a href="" target="_blank" aria-label="link to instagram"><i class="fab fa-instagram fs-4"></i></a>
+                    <div class="d-inline-flex gap-3 align-items-center social-links mb-4">
+                        <a href="" target="_blank" aria-label="link to linkedin">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" aria-label="link to facebook">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" aria-label="link to twitter">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+
+                        </a>
+                        <a href="" target="_blank" aria-label="link to instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <h3 class="text-white mb-3">Quick Links</h3>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li class="list-style">
@@ -733,32 +1119,46 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-4">
                     <h3 class="text-white mb-3">Contact Info</h3>
                     <ul class="list-unstyled d-flex flex-column gap-3">
                         <li class="d-flex gap-2">
-                            <i class="fas fa-map fs-4 text-light"></i>
-                            <span class="text-secondary">Unicoder Design Agency 301 The Greenhouse, Custard
+                            <span class="text-light flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span class="text-secondary">
+                                Unicoder Design Agency 301 The Greenhouse, Custard
                                 Factory, London, E3 8DY.</span>
                         </li>
-                        <li class="d-flex gap-2">
-                            <i class="fas fa-phone fs-4 text-light"></i>
+                        <li class="d-flex gap-2 align-items-center">
+                            <span class="text-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
                             <span class="text-secondary">+1 246-345-0695</span>
                         </li>
-                        <li class="d-flex gap-2">
-                            <i class="fas fa-envelope fs-4 text-light"></i>
+                        <li class="d-flex gap-2 align-items-center">
+                            <span class="text-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                    <path
+                                        d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                                </svg>
+                            </span>
                             <span class="text-secondary">helpline@homex.com</span>
                         </li>
                     </ul>
-
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <h3 class="text-white mb-3">Appointment</h3>
-                    <div class="appointment py-6">
-                        <span class="text-secondary">Litora ligula dapibus scelerisque vitae, fermentum aenean
-                            gravida lobortis mus pulvinar magna turient primis.</span>
-                    </div>
-                    <button class="btn btn-primary col-md-12 py-2 my-4">Register Now</button>
                 </div>
             </div>
 
@@ -766,7 +1166,7 @@
             <div class="row pb-3 py-md-4">
                 <div class="col-md-12">
                     <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row gap-3">
-                        <p class="text-secondary m-0">&copy; 2021 Uniland All right reserved</p>
+                        <p class="text-secondary m-0">&copy; 2021 HomeNest All right reserved</p>
                         <ul class="list-unstyled d-flex gap-2 m-0">
                             <li>
                                 <a href="" class="text-secondary text-decoration-none">Privacy & Policy</a>
@@ -826,7 +1226,6 @@
             },
         });
     </script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
